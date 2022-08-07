@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Know weather of your place</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+    body{
+        background-image: url(https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8d2VhdGhlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60) ;
+        background-repeat:no-repeat;
+        box-sizing: content-box;
+    }
+    #request{
+        float:right;
+        background-color: rgb(17, 29, 25);
+        pointer-events: stroke;
+        text-decoration: none;
+        
+    }
+    .container{
+        width: 60vw;
+        margin-top: 20vh;
+    }
+    .btn{
+        pointer-events: stroke;
+        background-color: blue;
+      position: relative;
+      left: 22vw;
+      width: 100px;
+    }
+</style>
+</head>
+<body><h1 style="text-align:center">Check Weather by City</h1>
+    <div class="container">
+    <h1>Enter the city name</h1>
+    <form action="/" method="POST">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="formGroupExampleInput" name="cityname" placeholder="Enter Your City name">
+          </div>
+        <a href="/index"><button class="btn" type="submit">Submit</button></a>
+        <a href="/requests" id="request">Check Recent weather requests</a>
+    </form>
+</div>
+</body>
+</html>
