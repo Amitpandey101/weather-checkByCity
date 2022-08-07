@@ -4,7 +4,7 @@ const requestSchema = new mongoose.Schema({
     cityname: {
         type: String,
         notEmpty: true,
-        errorMessage: "Phone number cannot be empty"
+        errorMessage: "This field cannot be empty"
        
       
     },
